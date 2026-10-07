@@ -1,0 +1,745 @@
+@charset "UTF-8";
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Fresh Light Green & Emerald Hydro Palette */
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-200: #bbf7d0;
+  --green-300: #86efac;
+  --green-400: #4ade80;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --green-800: #166534;
+  --green-900: #14532d;
+
+  /* Emerald / Mint */
+  --emerald-50: #ecfdf5;
+  --emerald-100: #d1fae5;
+  --emerald-200: #a7f3d0;
+  --emerald-300: #6ee7b7;
+  --emerald-400: #34d399;
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+  --emerald-700: #047857;
+
+  /* Sky Blue Accents */
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --cyan-400: #22d3ee;
+  --cyan-500: #06b6d4;
+
+  /* Neutrals & Surfaces */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --surface-white: #ffffff;
+
+  --text-main: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+
+  --border-light: #e2e8f0;
+  --border-green: #6ee7b7;
+  --border-emerald: #34d399;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.12), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+  --shadow-green-glow: 0 14px 35px -5px rgba(16, 185, 129, 0.35);
+
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-full: 9999px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: var(--text-main);
+  background-color: #ffffff;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  background: #ffffff;
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: inherit;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+/* ==========================================================
+   LAYOUT UTILITIES
+   ========================================================== */
+.container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.section-padding {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+/* ==========================================================
+   VIBRANT LIGHT GREEN & OCEAN BLUE GRADIENTS & MESHES
+   ========================================================== */
+.gradient-light-green {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 50%, #86efac 100%);
+  color: #064e3b;
+}
+
+.gradient-mint-mesh {
+  background-color: #dcfce7;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(52, 211, 153, 0.35) 0px, transparent 55%),
+    radial-gradient(at 100% 100%, rgba(45, 212, 191, 0.4) 0px, transparent 55%),
+    radial-gradient(at 50% 50%, rgba(187, 247, 208, 0.6) 0px, transparent 100%);
+}
+
+.gradient-ocean-blue {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0369a1 100%);
+  color: #ffffff;
+}
+
+.gradient-water-deep {
+  background: linear-gradient(135deg, #032b43 0%, #054a68 50%, #0d6e6e 100%);
+  color: #ffffff;
+}
+
+.gradient-emerald-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(220, 252, 231, 0.8) 55%, rgba(187, 247, 208, 0.75) 100%);
+  border: 1.5px solid #6ee7b7;
+  border-radius: 0px;
+  box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.15);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gradient-emerald-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: #10b981;
+  box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.3);
+}
+
+.gradient-blue-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(239, 246, 255, 0.8) 55%, rgba(219, 234, 254, 0.75) 100%);
+  border: 1.5px solid #93c5fd;
+  border-radius: 0px;
+  box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.15);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gradient-blue-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: #0284c7;
+  box-shadow: 0 20px 40px -10px rgba(2, 132, 199, 0.3);
+}
+
+/* Dynamic Glass Navbar - Crisp White Glass with Emerald/Cyan Accent */
+.gradient-navbar {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 2px solid #a7f3d0;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.gradient-navbar-scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.1);
+  border-bottom-color: #10b981;
+}
+
+/* Helper Light Green Gradients */
+.bg-light-green-1 {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 50%, #86efac 100%);
+}
+
+.bg-light-green-2 {
+  background: linear-gradient(135deg, #bbf7d0 0%, #a7f3d0 50%, #6ee7b7 100%);
+}
+
+.bg-light-green-3 {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 50%, #a7f3d0 100%);
+}
+
+.bg-light-green-4 {
+  background: linear-gradient(135deg, #d1fae5 0%, #bbf7d0 50%, #86efac 100%);
+}
+
+.card-light-green {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96) 0%, rgba(220, 252, 231, 0.85) 55%, rgba(187, 247, 208, 0.8) 100%);
+  border: 1.5px solid #6ee7b7;
+  border-radius: 0px;
+  box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.16);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-light-green:hover {
+  transform: translateY(-6px);
+  border-color: #10b981;
+  box-shadow: 0 20px 35px -5px rgba(16, 185, 129, 0.3);
+}
+
+.gradient-text-green {
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gradient-text-emerald {
+  background: linear-gradient(135deg, #047857 0%, #059669 50%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* ==========================================================
+   BUTTONS WITH DYNAMIC SLIDE HOVER EFFECT (VICE-VERSA COLOR SLIDE)
+   ========================================================== */
+.btn-gradient-emerald,
+.btn-gradient-mint,
+.btn-sky-primary,
+.btn-sky-secondary,
+.btn-outline-white,
+.btn-outline,
+.btn-whatsapp,
+.btn-slide {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Keep all inner elements (icons, labels, spans) strictly in foreground above the sliding layer */
+.btn-gradient-emerald > *,
+.btn-gradient-mint > *,
+.btn-sky-primary > *,
+.btn-sky-secondary > *,
+.btn-outline-white > *,
+.btn-outline > *,
+.btn-whatsapp > *,
+.btn-slide > *,
+button[class*="btn-"] > *,
+a[class*="btn-"] > * {
+  position: relative;
+  z-index: 10 !important;
+  transition: color 0.3s ease, stroke 0.3s ease, transform 0.3s ease;
+}
+
+/* Sliding curtain transition on hover (Layer 1 - behind foreground content) */
+.btn-gradient-emerald::before,
+.btn-gradient-mint::before,
+.btn-sky-primary::before,
+.btn-sky-secondary::before,
+.btn-outline-white::before,
+.btn-outline::before,
+.btn-whatsapp::before,
+.btn-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-101%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1 !important;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* 1. Emerald Button (Emerald -> Teal -> Sky Blue) slides into vice-versa (Sky Blue -> Teal -> Forest) */
+.btn-gradient-emerald {
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #0284c7 100%);
+  color: #ffffff !important;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 18px 0 rgba(16, 185, 129, 0.35);
+}
+
+.btn-gradient-emerald::before {
+  background: linear-gradient(135deg, #0284c7 0%, #0d9488 50%, #047857 100%);
+}
+
+.btn-gradient-emerald:hover::before {
+  transform: translateX(0);
+}
+
+.btn-gradient-emerald:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px 0 rgba(2, 132, 199, 0.5);
+  color: #ffffff !important;
+}
+
+/* 2. Mint Button (Soft Pale Green background with green text) slides into rich Deep Emerald with WHITE text */
+.btn-gradient-mint {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  color: #065f46;
+  border: 1.5px solid #6ee7b7;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius-full);
+}
+
+.btn-gradient-mint::before {
+  background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #0284c7 100%);
+}
+
+.btn-gradient-mint:hover::before {
+  transform: translateX(0);
+}
+
+.btn-gradient-mint:hover {
+  background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #0284c7 100%) !important;
+  color: #ffffff !important;
+  border-color: #059669 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px 0 rgba(16, 185, 129, 0.35);
+}
+
+.btn-gradient-mint:hover,
+.btn-gradient-mint:hover *,
+.btn-gradient-mint:hover > *,
+.btn-gradient-mint:hover span,
+.btn-gradient-mint:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* 3. Sky Primary Button (Blue to Emerald) slides into Emerald to Deep Blue */
+.btn-sky-primary {
+  background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #10b981 100%);
+  color: #ffffff !important;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 15px 0 rgba(2, 132, 199, 0.35);
+}
+
+.btn-sky-primary::before {
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #0284c7 100%);
+}
+
+.btn-sky-primary:hover::before {
+  transform: translateX(0);
+}
+
+.btn-sky-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px 0 rgba(16, 185, 129, 0.5);
+  color: #ffffff !important;
+}
+
+/* 4. Sky Secondary Button (Pale Green background with green text) slides into Forest Green with WHITE text */
+.btn-sky-secondary {
+  background: #f0fdf4;
+  color: #065f46;
+  border: 1.5px solid #a7f3d0;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius-full);
+}
+
+.btn-sky-secondary::before {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.btn-sky-secondary:hover::before {
+  transform: translateX(0);
+}
+
+.btn-sky-secondary:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  color: #ffffff !important;
+  border-color: #047857 !important;
+  transform: translateY(-2px);
+}
+
+.btn-sky-secondary:hover,
+.btn-sky-secondary:hover *,
+.btn-sky-secondary:hover > *,
+.btn-sky-secondary:hover span,
+.btn-sky-secondary:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* 5. Outline White Button slides into Emerald-Cyan gradient */
+.btn-outline-white {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius-full);
+}
+
+.btn-outline-white::before {
+  background: linear-gradient(135deg, #059669 0%, #0284c7 100%);
+}
+
+.btn-outline-white:hover::before {
+  transform: translateX(0);
+}
+
+.btn-outline-white:hover {
+  border-color: #34d399;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+.btn-outline-white:hover,
+.btn-outline-white:hover *,
+.btn-outline-white:hover > *,
+.btn-outline-white:hover span,
+.btn-outline-white:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* 5b. Generic Outline Button (White background with green text) slides into rich Emerald with WHITE text */
+.btn-outline {
+  background: #ffffff;
+  color: #065f46;
+  border: 1.5px solid #10b981;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius-full);
+}
+
+.btn-outline::before {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.btn-outline:hover::before {
+  transform: translateX(0);
+}
+
+.btn-outline:hover {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  color: #ffffff !important;
+  border-color: #059669 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px 0 rgba(16, 185, 129, 0.3);
+}
+
+.btn-outline:hover,
+.btn-outline:hover *,
+.btn-outline:hover > *,
+.btn-outline:hover span,
+.btn-outline:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Universal hover text rule for all buttons */
+.btn-gradient-emerald:hover *,
+.btn-sky-primary:hover *,
+.btn-whatsapp:hover * {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* 6. WhatsApp Button (Bright Green to Teal) slides into vice-versa (Dark Teal to Green) */
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #ffffff;
+  font-weight: 800;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 15px 0 rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp::before {
+  background: linear-gradient(135deg, #075e54 0%, #128c7e 50%, #25d366 100%);
+}
+
+.btn-whatsapp:hover::before {
+  transform: translateX(0);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px 0 rgba(37, 211, 102, 0.55);
+  color: #ffffff;
+}
+
+/* ==========================================================
+   BADGES & PILLS - Pointed Edges
+   ========================================================== */
+.badge-green {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #dcfce7 0%, #d1fae5 100%);
+  color: #065f46;
+  padding: 0.35rem 0.85rem;
+  border-radius: 0px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid #86efac;
+}
+
+.badge-sky {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #dcfce7 0%, #e0f2fe 100%);
+  color: #047857;
+  padding: 0.35rem 0.85rem;
+  border-radius: 0px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid #86efac;
+}
+
+.badge-dark-sky {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%);
+  color: #34d399;
+  padding: 0.35rem 0.85rem;
+  border-radius: 0px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid rgba(52, 211, 153, 0.5);
+}
+
+/* ==========================================================
+   FORM INPUTS
+   ========================================================== */
+.input-field {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  color: var(--text-main);
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.input-field:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+}
+
+.select-field {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  color: var(--text-main);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.select-field:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+}
+
+/* ==========================================================
+   ANIMATIONS & TRANSITIONS
+   ========================================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes floatSlow {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+@keyframes pulseEmeraldGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 0 16px rgba(16, 185, 129, 0);
+  }
+}
+
+.pulse-glow {
+  animation: pulseEmeraldGlow 2.5s infinite;
+}
+
+.hover-card-elevate {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-card-elevate:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: #10b981 !important;
+  box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.28) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0fdf4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6ee7b7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
+
+/* ==========================================================
+   POINTED EDGES (SHARP 90° CORNERS) FOR ALL SECTIONS & DIVS
+   Structural divs, cards, sections, badges have sharp pointed edges.
+   Buttons strictly preserve their original borders and radius.
+   ========================================================== */
+section,
+.container-custom,
+.tanker-card,
+.service-card,
+.hero-slider-container,
+.card-light-green,
+.modal-content,
+div.rounded-3xl,
+div.rounded-2xl,
+div.rounded-xl,
+div.rounded-lg,
+div.rounded-md,
+div.rounded-sm,
+div.rounded,
+span.badge-green,
+span.badge-sky,
+span.badge-dark-sky,
+.badge-green,
+.badge-sky,
+.badge-dark-sky,
+.stat-card,
+.feature-card,
+.spec-tag {
+  border-radius: 0px !important;
+}
