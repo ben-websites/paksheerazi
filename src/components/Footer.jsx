@@ -232,10 +232,6 @@ const Footer = ({ onOpenBooking }) => {
                 <span>Track Live Tanker GPS</span>
               </Link>
               <br />
-              <Link to="/admin" className="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 text-xs font-bold transition">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>Admin Operations Console</span>
-              </Link>
             </div>
 
             <div className="pt-2">
