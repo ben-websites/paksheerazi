@@ -1,4 +1,4 @@
-mport ServicesSection from "../components/ServicesSection";
+import ServicesSection from "../components/ServicesSection";
 import WhyChooseUs from "../components/WhyChooseUs";
 import TestimonialsSection from "../components/TestimonialsSection";
 import { Droplets, ShieldCheck, CheckCircle2, Truck, Phone, Sparkles, ArrowRight } from "lucide-react";

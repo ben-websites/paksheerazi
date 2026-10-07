@@ -1,4 +1,4 @@
-mport { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { 
   Search, 

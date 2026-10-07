@@ -1,4 +1,4 @@
-mport { useState } from "react";
+import { useState } from "react";
 import { 
   MapPin, 
   Search, 

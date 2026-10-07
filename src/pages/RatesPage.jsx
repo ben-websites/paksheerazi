@@ -1,4 +1,4 @@
-mport RatesTableSection from "../components/RatesTableSection";
+import RatesTableSection from "../components/RatesTableSection";
 import WhyChooseUs from "../components/WhyChooseUs";
 import TestimonialsSection from "../components/TestimonialsSection";
 import { Sparkles, MapPin, Truck, Phone } from "lucide-react";

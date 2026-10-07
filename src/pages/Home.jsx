@@ -1,4 +1,4 @@
-mport HeroSection from "../components/HeroSection";
+import HeroSection from "../components/HeroSection";
 import FleetSection from "../components/FleetSection";
 import OfficeLocationSection from "../components/OfficeLocationSection";
 import WaterQualitySection from "../components/WaterQualitySection";
