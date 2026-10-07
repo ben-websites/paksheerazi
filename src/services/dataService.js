@@ -1,4 +1,4 @@
-/ src/services/dataService.js
+//src/services/dataService.js
 // Handles Firestore data synchronization with resilient fallback defaults
 
 import { 
