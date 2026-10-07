@@ -1,21 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { 
-  Droplets, 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
-  ShieldCheck, 
+// @ts-ignore - lucide-react types are not bundled in this setup
+import {
+  Droplets,
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  ShieldCheck,
   ArrowRight,
   Truck,
   CheckCircle,
   MessageCircle,
-  Instagram,
-  Facebook,
   Award,
   Send,
-  Navigation
+  Navigation,
 } from "lucide-react";
 
 const Footer = ({ onOpenBooking }) => {
@@ -209,20 +208,20 @@ const Footer = ({ onOpenBooking }) => {
                 href="https://www.instagram.com/paksheeraziandsons?stkn=MXR3aGtieHU1bWt2Nw=="
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram"
+                aria-label="Clock"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition"
               >
-                <Instagram className="w-3.5 h-3.5 text-pink-400" />
+                <Clock className="w-3.5 h-3.5 text-yellow-400" />
                 <span>Instagram</span>
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61594704197301"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Facebook"
+                aria-label="Clock"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition"
               >
-                <Facebook className="w-3.5 h-3.5 text-blue-400" />
+                <Clock className="w-3.5 h-3.5 text-yellow-400" />
                 <span>Facebook</span>
               </a>
             </div>
