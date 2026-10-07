@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// @ts-ignore - lucide-react types are not bundled in this setup
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import {
   Droplets,
   Phone,
@@ -208,20 +208,20 @@ const Footer = ({ onOpenBooking }) => {
                 href="https://www.instagram.com/paksheeraziandsons?stkn=MXR3aGtieHU1bWt2Nw=="
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Clock"
+                aria-label="Instagram"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition"
               >
-                <Clock className="w-3.5 h-3.5 text-yellow-400" />
+                <FaInstagram className="w-3.5 h-3.5 text-pink-400" />
                 <span>Instagram</span>
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61594704197301"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Clock"
+                aria-label="Facebook"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition"
               >
-                <Clock className="w-3.5 h-3.5 text-yellow-400" />
+                <FaFacebookF className="w-3.5 h-3.5 text-blue-400" />
                 <span>Facebook</span>
               </a>
             </div>
