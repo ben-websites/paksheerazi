@@ -11,6 +11,8 @@ import {
   Truck,
   CheckCircle,
   MessageCircle,
+  Instagram,
+  Facebook,
   Award,
   Send,
   Navigation
@@ -68,7 +70,7 @@ const Footer = ({ onOpenBooking }) => {
               <form onSubmit={handleCallbackSubmit} className="flex gap-2 max-w-md w-full">
                 <input
                   type="tel"
-                  placeholder="0345-2982839"
+                  placeholder="0304 9025994"
                   className="input-field text-xs sm:text-sm py-3 bg-slate-950 text-white border-slate-700 focus:border-cyan-400 rounded-none"
                   value={callbackPhone}
                   onChange={(e) => setCallbackPhone(e.target.value)}
@@ -187,9 +189,9 @@ const Footer = ({ onOpenBooking }) => {
             </h4>
 
             <div className="space-y-2 text-xs">
-              <a href="tel:+923452982839" className="flex items-center gap-2 text-white font-bold hover:text-cyan-300 transition">
+              <a href="tel:+923049025994" className="flex items-center gap-2 text-white font-bold hover:text-cyan-300 transition">
                 <Phone className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Primary: 0345-2982839</span>
+                <span>Primary: 0304 9025994</span>
               </a>
               <a href="tel:+923218970244" className="flex items-center gap-2 text-slate-400 hover:text-white transition">
                 <Phone className="w-3.5 h-3.5 text-sky-400" />
@@ -199,9 +201,29 @@ const Footer = ({ onOpenBooking }) => {
                 <Phone className="w-3.5 h-3.5 text-teal-400" />
                 <span>Hotline: 0345-6011026</span>
               </a>
-              <a href="mailto:paksheeraziandsons@gmail.com" className="flex items-center gap-2 text-slate-400 hover:text-white transition">
+              <a href="mailto:paksheerazi1@gmail.com" className="flex items-center gap-2 text-slate-400 hover:text-white transition">
                 <Mail className="w-3.5 h-3.5 text-sky-400" />
-                <span>paksheeraziandsons@gmail.com</span>
+                <span>paksheerazi1@gmail.com</span>
+              </a>
+              <a
+                href="https://www.instagram.com/paksheeraziandsons?stkn=MXR3aGtieHU1bWt2Nw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="flex items-center gap-2 text-slate-400 hover:text-white transition"
+              >
+                <Instagram className="w-3.5 h-3.5 text-pink-400" />
+                <span>Instagram</span>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61594704197301"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="flex items-center gap-2 text-slate-400 hover:text-white transition"
+              >
+                <Facebook className="w-3.5 h-3.5 text-blue-400" />
+                <span>Facebook</span>
               </a>
             </div>
 

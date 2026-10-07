@@ -31,10 +31,10 @@ const NAVIGATION_LINKS = [
 ];
 
 const CONTACT_INFO = {
-  phone: "0345-2982839",
-  phoneRaw: "+923452982839",
+  phone: "0304 9025994",
+  phoneRaw: "+923049025994",
   whatsappUrl:
-    "https://wa.me/923452982839?text=Assalam-o-Alaikum%2C%20I%20need%20a%20water%20tanker%20from%20Pak%20Sheerazi%20%26%20Sons",
+    "https://wa.me/923049025994?text=Assalam-o-Alaikum%2C%20I%20need%20a%20water%20tanker%20from%20Pak%20Sheerazi%20%26%20Sons",
 };
 
 // =========================================================================

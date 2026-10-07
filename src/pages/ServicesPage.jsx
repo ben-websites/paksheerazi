@@ -1,4 +1,4 @@
-import ServicesSection from "../components/ServicesSection";
+mport ServicesSection from "../components/ServicesSection";
 import WhyChooseUs from "../components/WhyChooseUs";
 import TestimonialsSection from "../components/TestimonialsSection";
 import { Droplets, ShieldCheck, CheckCircle2, Truck, Phone, Sparkles, ArrowRight } from "lucide-react";
@@ -46,11 +46,11 @@ const ServicesPage = ({ onOpenBooking }) => {
               <span>Book Water Tanker Now</span>
             </button>
             <a
-              href="tel:+923452982839"
+              href="tel:+923049025994"
               className="btn-outline-white text-sm sm:text-base px-6 py-3.5 rounded-full font-bold flex items-center gap-2"
             >
               <Phone className="w-4 h-4 text-emerald-400" />
-              <span>Dispatcher: 0345-2982839</span>
+              <span>Dispatcher: 0304 9025994</span>
             </a>
           </div>
         </div>

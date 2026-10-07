@@ -1,4 +1,4 @@
-// src/services/dataService.js
+/ src/services/dataService.js
 // Handles Firestore data synchronization with resilient fallback defaults
 
 import { 
@@ -32,11 +32,11 @@ export const COMPANY_INFO = {
   fieldOfBusiness: "Water Supplier Contractor (Public & Commercial Sector)",
   
   // Official Contacts
-  phonePrimary: "0345-2982839",
+  phonePrimary: "0304 9025994",
   phoneSecondary: "0345-6011026",
   phoneOffice: "0321-8970244",
   phoneLandline: "021-34632501",
-  whatsappNumber: "923452982839",
+  whatsappNumber: "923049025994",
   email: "paksheeraziandsons@gmail.com",
   alternateEmail: "kasturijee@yahoo.com",
 

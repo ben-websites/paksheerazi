@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+mport { useState, useEffect } from "react";
 import { 
   Droplets, 
   Truck, 
@@ -160,21 +160,21 @@ const HeroSection = ({ onOpenBooking }) => {
               </button>
 
               <a
-                href="https://wa.me/923452982839?text=Assalam-o-Alaikum%2C%20I%20urgently%20need%20a%20water%20tanker%20from%20Pak%20Sheerazi%20%26%20Sons"
+                href="https://wa.me/923049025994?text=Assalam-o-Alaikum%2C%20I%20urgently%20need%20a%20water%20tanker%20from%20Pak%20Sheerazi%20%26%20Sons"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp text-sm sm:text-base px-6 py-4 rounded-full font-bold shadow-xl"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>WhatsApp 0345-2982839</span>
+                <span>WhatsApp 0304 9025994</span>
               </a>
 
               <a
-                href="tel:+923452982839"
+                href="tel:+923049025994"
                 className="px-5 py-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm sm:text-base transition backdrop-blur-md flex items-center gap-2"
               >
                 <PhoneCall className="w-4 h-4 text-emerald-400" />
-                <span>0345-2982839</span>
+                <span>0304 9025994</span>
               </a>
             </div>
 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+mport { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { 
   Droplets, 
@@ -139,7 +139,7 @@ const Register = () => {
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="0345-2982839"
+                  placeholder="0304 9025994"
                   className="input-field pl-9.5 text-sm"
                   value={formData.phone}
                   onChange={handleChange}

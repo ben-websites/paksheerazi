@@ -1,4 +1,4 @@
-import { useState } from "react";
+mport { useState } from "react";
 import FleetSection from "../components/FleetSection";
 import WhyChooseUs from "../components/WhyChooseUs";
 import TestimonialsSection from "../components/TestimonialsSection";
@@ -57,11 +57,11 @@ const FleetPage = ({ onOpenBooking }) => {
               <span>Book A Tanker Size</span>
             </button>
             <a
-              href="tel:+923452982839"
+              href="tel:+923049025994"
               className="btn-outline-white text-sm sm:text-base px-6 py-3.5 rounded-full font-bold flex items-center gap-2"
             >
               <Phone className="w-4 h-4 text-emerald-400" />
-              <span>Direct Dispatch: 0345-2982839</span>
+              <span>Direct Dispatch: 0304 9025994</span>
             </a>
           </div>
         </div>

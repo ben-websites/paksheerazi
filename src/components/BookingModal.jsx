@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+mport { useState, useEffect } from "react";
 import { 
   X, 
   Truck, 
@@ -68,7 +68,7 @@ const BookingModal = ({ isOpen, onClose, initialTankerCapacity, initialArea }) =
       return;
     }
     if (!phone.trim() || phone.length < 10) {
-      setErrorMsg("Please enter a valid Pakistani contact phone number (e.g., 0345-2982839).");
+      setErrorMsg("Please enter a valid Pakistani contact phone number (e.g., 0304 9025994).");
       return;
     }
     if (!address.trim()) {
@@ -173,7 +173,7 @@ const BookingModal = ({ isOpen, onClose, initialTankerCapacity, initialArea }) =
 
             <div className="flex flex-col gap-2.5">
               <a
-                href={`https://wa.me/923452982839?text=Assalam-o-Alaikum%2C%20I%20placed%20Order%20${orderSuccess.orderId}%20for%20a%20water%20tanker%20at%20${encodeURIComponent(orderSuccess.address)}`}
+                href={`https://wa.me/923049025994?text=Assalam-o-Alaikum%2C%20I%20placed%20Order%20${orderSuccess.orderId}%20for%20a%20water%20tanker%20at%20${encodeURIComponent(orderSuccess.address)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp w-full text-sm py-3"
@@ -340,7 +340,7 @@ const BookingModal = ({ isOpen, onClose, initialTankerCapacity, initialArea }) =
                       <Phone className="w-4 h-4 text-slate-400 absolute left-3 top-3" />
                       <input
                         type="tel"
-                        placeholder="e.g. 0345-2982839"
+                        placeholder="e.g. 0304 9025994"
                         className="input-field pl-9 text-sm"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}

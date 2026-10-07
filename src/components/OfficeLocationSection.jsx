@@ -1,4 +1,4 @@
-import { useState } from "react";
+mport { useState } from "react";
 import { 
   MapPin, 
   Clock, 
@@ -20,7 +20,7 @@ const HUBS = [
     area: "Gulshan-e-Iqbal (Dariya Khan Rindh Goth)",
     address: "Plot # A-12, Dariya Khan Rindh Goth, Gulshan-e-Iqbal, Karachi",
     timing: "Open 24/7 (Central Dispatch Desk)",
-    phone: "0345-2982839 / 0321-8970244",
+    phone: "0304 9025994 / 0321-8970244",
     isHQ: true,
     embedUrl: "https://maps.google.com/maps?q=Gulshan-e-Iqbal+Karachi&t=&z=13&ie=UTF8&iwloc=&output=embed",
     directionsUrl: "https://maps.google.com/?q=Plot+A-12+Dariya+Khan+Rindh+Goth+Gulshan-e-Iqbal+Karachi"
@@ -31,7 +31,7 @@ const HUBS = [
     area: "Gulistan-e-Johar (Bhitaiabad)",
     address: "House No. E-416, Bhitaiabad Nazd Balock Chock, Gulistan-e-Johar, Karachi",
     timing: "Open 24 Hours Daily",
-    phone: "0345-6011026 / 0345-2982839",
+    phone: "0345-6011026 / 0304 9025994",
     isHQ: false,
     embedUrl: "https://maps.google.com/maps?q=Bhitaiabad+Gulistan-e-Jauhar+Karachi&t=&z=14&ie=UTF8&iwloc=&output=embed",
     directionsUrl: "https://maps.google.com/?q=Bhitaiabad+Gulistan-e-Johar+Karachi"
@@ -42,7 +42,7 @@ const HUBS = [
     area: "NIPA Hydrant (District East)",
     address: "Beside Nadeem Medical Centre, NIPA Chowrangi, Gulshan-e-Iqbal, Karachi",
     timing: "Official Hydrant Pumping Hours (24/7 Operations)",
-    phone: "0345-2982839 / 0345-6011026",
+    phone: "0304 9025994 / 0345-6011026",
     isHQ: false,
     embedUrl: "https://maps.google.com/maps?q=NIPA+Chowrangi+Gulshan-e-Iqbal+Karachi&t=&z=14&ie=UTF8&iwloc=&output=embed",
     directionsUrl: "https://maps.google.com/?q=NIPA+Chowrangi+Gulshan-e-Iqbal+Karachi"
@@ -53,7 +53,7 @@ const HUBS = [
     area: "Jando Para (Heavy Fleet Base)",
     address: "H.No 544, Gali No 15, Jando Para, Karachi, Sindh",
     timing: "24/7 Heavy Fleet Operations & Staging",
-    phone: "0321-8970244 / 0345-2982839",
+    phone: "0321-8970244 / 0304 9025994",
     isHQ: false,
     embedUrl: "https://maps.google.com/maps?q=Karachi+East+Sindh&t=&z=13&ie=UTF8&iwloc=&output=embed",
     directionsUrl: "https://maps.google.com/?q=Jando+Para+Karachi"

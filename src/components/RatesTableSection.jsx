@@ -1,4 +1,4 @@
-import { useState } from "react";
+mport { useState } from "react";
 import { 
   MapPin, 
   Search, 
@@ -113,7 +113,7 @@ const RatesTableSection = ({ onOpenBooking }) => {
                 ) : (
                   <tr>
                     <td colSpan="7" className="text-center py-8 text-slate-400">
-                      No matching areas found for "{searchTerm}". Call our official dispatch team at 0345-2982839 / 0321-8970244 for custom coverage!
+                      No matching areas found for "{searchTerm}". Call our official dispatch team at 0304 9025994 / 0321-8970244 for custom coverage!
                     </td>
                   </tr>
                 )}
@@ -127,8 +127,8 @@ const RatesTableSection = ({ onOpenBooking }) => {
               <Info className="w-4 h-4 text-sky-600 shrink-0" />
               <span>KW&SB Approved Contractor rates. Bulk supply contracts available for construction and commercial sites.</span>
             </div>
-            <a href="tel:+923452982839" className="font-semibold text-slate-700 hover:text-emerald-600">
-              Dispatch: 0345-2982839 / 0321-8970244
+            <a href="tel:+923049025994" className="font-semibold text-slate-700 hover:text-emerald-600">
+              Dispatch: 0304 9025994 / 0321-8970244
             </a>
           </div>
         </div>

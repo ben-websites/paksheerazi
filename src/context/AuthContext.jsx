@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+mport { createContext, useContext, useEffect, useState } from "react";
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
@@ -101,7 +101,7 @@ export const AuthProvider = ({ children }) => {
       uid: mockUser.uid,
       name: mockUser.displayName,
       email: mockUser.email,
-      phone: "0345-2982839",
+      phone: "0304 9025994",
       address: "Plot # A-12, Dariya Khan Rindh Goth, Gulshan-e-Iqbal, Karachi",
       role: role,
     });

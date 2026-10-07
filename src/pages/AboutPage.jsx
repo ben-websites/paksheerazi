@@ -1,4 +1,4 @@
-import { 
+mport { 
   Droplets, 
   ShieldCheck, 
   Award, 
@@ -54,14 +54,14 @@ const AboutPage = () => {
 
           <div className="flex items-center justify-center gap-3.5 pt-3 flex-wrap">
             <a
-              href="tel:+923452982839"
+              href="tel:+923049025994"
               className="btn-gradient-emerald text-sm sm:text-base px-7 py-3.5 rounded-full font-bold shadow-xl shadow-emerald-500/40 flex items-center gap-2"
             >
               <Phone className="w-4 h-4 text-white" />
-              <span>Call Dispatch HQ: 0345-2982839</span>
+              <span>Call Dispatch HQ: 0304 9025994</span>
             </a>
             <a
-              href="https://wa.me/923452982839?text=Assalam-o-Alaikum%2C%20I%20am%20inquiring%20about%20Pak%20Sheerazi%20%26%20Sons%20water%20supply%20contracts"
+              href="https://wa.me/923049025994?text=Assalam-o-Alaikum%2C%20I%20am%20inquiring%20about%20Pak%20Sheerazi%20%26%20Sons%20water%20supply%20contracts"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline-white text-sm sm:text-base px-6 py-3.5 rounded-full font-bold flex items-center gap-2"

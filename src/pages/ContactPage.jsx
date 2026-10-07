@@ -1,4 +1,4 @@
-import { useState } from "react";
+mport { useState } from "react";
 import { 
   Phone, 
   Mail, 
@@ -22,7 +22,7 @@ const HUBS = [
     area: "Gulshan-e-Iqbal (Dariya Khan Rindh Goth)",
     address: "Plot # A-12, Dariya Khan Rindh Goth, Gulshan-e-Iqbal, Karachi",
     timing: "Open 24/7 (Central Dispatch Desk)",
-    phone: "0345-2982839 / 0321-8970244",
+    phone: "0304 9025994 / 0321-8970244",
     isHQ: true,
     embedUrl: "https://maps.google.com/maps?q=Gulshan-e-Iqbal+Karachi&t=&z=13&ie=UTF8&iwloc=&output=embed",
     directionsUrl: "https://maps.google.com/?q=Plot+A-12+Dariya+Khan+Rindh+Goth+Gulshan-e-Iqbal+Karachi"
@@ -33,7 +33,7 @@ const HUBS = [
     area: "Gulistan-e-Johar (Bhitaiabad)",
     address: "House No. E-416, Bhitaiabad Nazd Balock Chock, Gulistan-e-Johar, Karachi",
     timing: "Open 24 Hours Daily",
-    phone: "0345-6011026 / 0345-2982839",
+    phone: "0345-6011026 / 0304 9025994",
     isHQ: false,
     embedUrl: "https://maps.google.com/maps?q=Bhitaiabad+Gulistan-e-Jauhar+Karachi&t=&z=14&ie=UTF8&iwloc=&output=embed",
     directionsUrl: "https://maps.google.com/?q=Bhitaiabad+Gulistan-e-Johar+Karachi"
@@ -44,7 +44,7 @@ const HUBS = [
     area: "NIPA Hydrant (District East)",
     address: "Beside Nadeem Medical Centre, NIPA Chowrangi, Gulshan-e-Iqbal, Karachi",
     timing: "Official Hydrant Pumping Hours (24/7 Operations)",
-    phone: "0345-2982839 / 0345-6011026",
+    phone: "0304 9025994 / 0345-6011026",
     isHQ: false,
     embedUrl: "https://maps.google.com/maps?q=NIPA+Chowrangi+Gulshan-e-Iqbal+Karachi&t=&z=14&ie=UTF8&iwloc=&output=embed",
     directionsUrl: "https://maps.google.com/?q=NIPA+Chowrangi+Gulshan-e-Iqbal+Karachi"
@@ -55,7 +55,7 @@ const HUBS = [
     area: "Jando Para (Heavy Fleet Base)",
     address: "H.No 544, Gali No 15, Jando Para, Karachi, Sindh",
     timing: "24/7 Heavy Fleet Operations & Staging",
-    phone: "0321-8970244 / 0345-2982839",
+    phone: "0321-8970244 / 0304 9025994",
     isHQ: false,
     embedUrl: "https://maps.google.com/maps?q=Karachi+East+Sindh&t=&z=13&ie=UTF8&iwloc=&output=embed",
     directionsUrl: "https://maps.google.com/?q=Jando+Para+Karachi"
@@ -116,15 +116,15 @@ const ContactPage = ({ onOpenBooking }) => {
 
           <div className="flex items-center justify-center gap-3.5 pt-2 flex-wrap">
             <a
-              href="tel:+923452982839"
+              href="tel:+923049025994"
               className="btn-gradient-emerald text-sm sm:text-base px-7 py-3.5 rounded-full font-black shadow-xl shadow-emerald-500/40 flex items-center gap-2"
             >
               <Phone className="w-4 h-4 text-white" />
-              <span>Hotline: 0345-2982839</span>
+              <span>Hotline: 0304 9025994</span>
             </a>
             
             <a
-              href="https://wa.me/923452982839?text=Assalam-o-Alaikum%2C%20I%20want%20to%20visit%20your%20office%20or%20book%20a%20tanker%20from%20Pak%20Sheerazi%20%26%20Sons"
+              href="https://wa.me/923049025994?text=Assalam-o-Alaikum%2C%20I%20want%20to%20visit%20your%20office%20or%20book%20a%20tanker%20from%20Pak%20Sheerazi%20%26%20Sons"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp text-sm sm:text-base px-6 py-3.5 rounded-full font-bold shadow-xl"
@@ -299,7 +299,7 @@ const ContactPage = ({ onOpenBooking }) => {
                     <label className="block text-xs font-black text-slate-700 mb-1">Mobile / WhatsApp *</label>
                     <input
                       type="tel"
-                      placeholder="0345-2982839"
+                      placeholder="0304 9025994"
                       className="input-field text-sm"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
